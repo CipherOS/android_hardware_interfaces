@@ -108,6 +108,15 @@ cc_library_static {
         "android.hardware.wifi-V1-ndk",
     ],
 
+    header_libs: [
+        "libhardware_legacy_headers",
+        "libwifi_headers",
+    ],
+    export_header_lib_headers: [
+        "libhardware_legacy_headers",
+        "libwifi_headers",
+    ],
+
     export_include_dirs: ["."],
 }
 
